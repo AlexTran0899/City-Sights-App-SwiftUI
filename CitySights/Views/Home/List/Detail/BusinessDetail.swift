@@ -88,7 +88,6 @@ struct BusinessDetail: View {
                     }.padding(.bottom)
                 }
             }
-            
             .padding(.horizontal)
         }
     }

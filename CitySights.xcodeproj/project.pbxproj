@@ -15,6 +15,7 @@
 		FA67963B29CF9F2B00E9A34B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA67963A29CF9F2B00E9A34B /* Constants.swift */; };
 		FA67963F29CFC83800E9A34B /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA67963E29CFC83800E9A34B /* Business.swift */; };
 		FA67964129CFCACD00E9A34B /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA67964029CFCACD00E9A34B /* BusinessSearch.swift */; };
+		FAA255D629D0B32800ECF52D /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA255D529D0B32800ECF52D /* BusinessMap.swift */; };
 		FAB8AA1729CFDA81003F3579 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8AA1629CFDA81003F3579 /* HomeView.swift */; };
 		FAB8AA1D29CFDE9C003F3579 /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8AA1C29CFDE9C003F3579 /* BusinessList.swift */; };
 		FAB8AA1F29CFE190003F3579 /* BusinessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8AA1E29CFE190003F3579 /* BusinessSectionHeader.swift */; };
@@ -33,6 +34,7 @@
 		FA67963A29CF9F2B00E9A34B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA67963E29CFC83800E9A34B /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		FA67964029CFCACD00E9A34B /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
+		FAA255D529D0B32800ECF52D /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
 		FAB8AA1629CFDA81003F3579 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FAB8AA1C29CFDE9C003F3579 /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
 		FAB8AA1E29CFE190003F3579 /* BusinessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSectionHeader.swift; sourceTree = "<group>"; };
@@ -134,10 +136,19 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		FAA255D229D0B2D000ECF52D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				FAA255D529D0B32800ECF52D /* BusinessMap.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		FAB8AA1829CFDA8F003F3579 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				FAB8AA1B29CFDE83003F3579 /* List */,
+				FAA255D229D0B2D000ECF52D /* Map */,
 				FAB8AA1629CFDA81003F3579 /* HomeView.swift */,
 			);
 			path = Home;
@@ -256,6 +267,7 @@
 				FAB8AA2629D09137003F3579 /* BusinessDetail.swift in Sources */,
 				FA67963F29CFC83800E9A34B /* Business.swift in Sources */,
 				FAB8AA1D29CFDE9C003F3579 /* BusinessList.swift in Sources */,
+				FAA255D629D0B32800ECF52D /* BusinessMap.swift in Sources */,
 				FAB8AA2129CFE211003F3579 /* BusinessSection.swift in Sources */,
 				FA67963B29CF9F2B00E9A34B /* Constants.swift in Sources */,
 				FA67964129CFCACD00E9A34B /* BusinessSearch.swift in Sources */,

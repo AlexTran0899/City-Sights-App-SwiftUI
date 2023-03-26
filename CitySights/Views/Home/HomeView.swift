@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var model: ContentModel
     @State var isMapShowing = false
+    
     var body: some View {
         if model.restaurants.count != 0 || model.sights.count != 0 {
             // determine if we should show the list view or map view
@@ -21,13 +22,19 @@ struct HomeView: View {
                             Image(systemName: "location")
                             Text("San Francisco")
                             Spacer()
-                            Text("Switch To map view")
+                            Button {
+                                self.isMapShowing = true
+                            } label: {
+                                Text("Switch to map view")
+                            }
                         }.padding(.horizontal)
                         Divider()
                         BusinessList()
                     }.navigationBarHidden(true)
                 } else {
-                    
+                    // show map view
+                    BusinessMap()
+                        .ignoresSafeArea()
                 }
             }
         } else {
