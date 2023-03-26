@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var model: ContentModel
     @State var isMapShowing = false
+    @State var selectedBusiness: Business?
     
     var body: some View {
         if model.restaurants.count != 0 || model.sights.count != 0 {
@@ -33,8 +34,13 @@ struct HomeView: View {
                     }.navigationBarHidden(true)
                 } else {
                     // show map view
-                    BusinessMap()
+                    BusinessMap(selectedBusiness: $selectedBusiness)
                         .ignoresSafeArea()
+                        .sheet(item: $selectedBusiness) { business in
+                            // create a business detail view instance
+                            // pass in the selected business
+                            BusinessDetail(business: business)
+                        }
                 }
             }
         } else {
