@@ -15,11 +15,11 @@ struct LaunchView: View {
             // Detect the authorization status of geolocating the user
             switch model.authorizationState {
             case .notDetermined:
-                Text("onboading")
+                OnboardingView()
             case .authorizedAlways, .authorizedWhenInUse:
                 HomeView()
             case .denied, .restricted:
-                Text("deninded")
+                LocationDeniedView()
             default:
                 Text("Internal error")
             }

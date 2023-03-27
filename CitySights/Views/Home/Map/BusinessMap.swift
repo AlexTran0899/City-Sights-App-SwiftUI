@@ -85,8 +85,6 @@ struct BusinessMap: UIViewRepresentable {
                     return
                 }
             }
-            
-            
         }
     }
     
